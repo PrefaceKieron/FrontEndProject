@@ -10,15 +10,12 @@ h2 {
 	letter-spacing: -0.065em;
 	font-size: 1rem;
 }
-body {
-	background-color: #fff87370;
-}
 #first {
 	background-color: #FFA500;
 	padding: 8px;
 	border-width: 4px;
 	border-style: solid;
-	border-color:#FFE4B5 ;
+	border-color: #FFE4B5;
 	border-radius: 20px;
 	margin-bottom: 10px;
 	width: 10%;
@@ -36,6 +33,7 @@ body {
 	margin-top: 3px;
 	margin-bottom: 10px;
 }
+/*this doesnt show up for some unknown reason*/
 #third {
 	width: 50%;
 	height: 35%;
@@ -47,4 +45,44 @@ body {
 	border-radius: 10px;
 	margin-top: 3px;
 	margin-bottom: 10px;
+}
+div {
+	display: flex;
+	position: relative;
+}
+div > h2 {
+	postion: absolute;
+	margin-left: 15px;
+	z-index:8;
+	left: 50%;
+	top:50%;
+}
+.owned {
+	position: fixed;
+	}
+@media screen and (max-width: 2000px) {
+	body {
+		background-color:#965287;
+	}
+}
+@media screen and (max-width: 1000px) {
+    body {
+        background-color:#012000;
+    }
+    h2 {
+    	color: #999999;
+    	font:serif;
+    }
+    h1 {
+    	color:#210111;
+    }
+}
+@media screen and (max-width: 650px) {
+    body {
+    	background-color:#134556;
+    }
+    h2 {
+    	color: #202277;
+    	font:serif;
+    }
 }
